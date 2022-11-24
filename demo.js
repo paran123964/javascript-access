@@ -1,15 +1,15 @@
-let productNameInputElement = document.getElementById('product-name');
-let remainingCharsElement = document.getElementById('remaining-chars');
+const productNameInputElement = document.getElementById('product-name');
+const remainingCharsElement = document.getElementById('remaining-chars');
 
 // console.dir(productNameInputElement);
 
-let paranAllowedchars = productNameInputElement.maxLength;
+const paranAllowedchars = productNameInputElement.maxLength;
 
 function updateRemainingCharacters(event) {
-    let enteredText = event.target.value;
-    let enteredTextLength = enteredText.length;
+    const enteredText = event.target.value;
+    const enteredTextLength = enteredText.length;
 
-    let remainingcharacters = paranAllowedchars - enteredTextLength;
+    const remainingcharacters = paranAllowedchars - enteredTextLength;
 
     remainingCharsElement.textContent = remainingcharacters;
 }
